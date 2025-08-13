@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Email Verification</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .header h2 {
+            color: #333;
+        }
+
+        .message {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+            padding: 20px 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #00a63d;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .footer {
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        a {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Verify Your Email Address</h2>
+        </div>
+        <div class="message">
+            <p>Hello,</p>
+            <p>
+                Thank you for registering on our website. To complete your signup process and activate your account,
+                please verify your email address by clicking the button below.
+            </p>
+            <p style="text-align: center; color:#ffffff">
+                <a href="http://localhost:5173/verify/{{token}}" target="_blank" style="
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #00a63d;
+      color: #ffffff !important;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    ">
+                    Verify Your Email
+                </a>
+            </p>
+            <p>If you did not initiate this request, you can safely ignore this email.</p>
+        </div>
+        <div class="footer">
+            &copy; 2025 Webelite Builders. All rights reserved.
+        </div>
+    </div>
+</body>
+
+</html>
